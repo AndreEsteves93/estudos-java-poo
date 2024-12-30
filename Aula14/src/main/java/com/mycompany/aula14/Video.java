@@ -12,7 +12,7 @@ public class Video implements AcoesVideo {
 
     // Atributos
     private String titulo;
-    private int avaliacao;
+    private float avaliacao;
     private int views, curtidas;
     private boolean reproduzindo;
 
@@ -34,12 +34,14 @@ public class Video implements AcoesVideo {
         this.titulo = titulo;
     }
 
-    public int getAvaliacao() {
+    public float getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+    public void setAvaliacao(float avaliacao) {
+        float nova;
+        nova = (this.avaliacao + avaliacao) / this.views;
+        this.avaliacao = nova;
     }
 
     public int getViews() {

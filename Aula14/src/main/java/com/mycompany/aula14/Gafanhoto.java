@@ -5,8 +5,8 @@
 package com.mycompany.aula14;
 
 /**
- *
- * @author Administrador
+ * subclasse de Pessoa que chama o construtor e o toString da super
+ * 
  */
 public class Gafanhoto extends Pessoa {
 
